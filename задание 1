@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=-WPlZjh88nF6wR9F5fCcLqB-GcWxCO4XwRyGRemSI6dodeR6hMGgyu94CdGYRkfDMjLQsGgQ5xyVLJRWKUgHJVen7s59l-ZEk3l03xMnp84siBB28fDyGplIeSH6yy_JHIQqwYSApIK0emczQ4tiLkE5JlKIODTzZ20dRZuyUCnCG75XP4HUp5GQJH1Mz0Lwca7866eK0jX2hStajhlRialUuby2xrdgYXhl5vAMGvYfnrilQOStUvx_A4nlMu7E4JGtr6d-Q3VSDFxafnbp8IWBinoE9Likzemd9t-aO6EQQwoB8NzVbCOjaBuqDa6YmqclFFGndiQ1MJ7Oy2zUIOnWG4PclNsSsMvoXCq1Wi7xRHbf0pJOwGVk_Fur7nrzrGiN-m6ypXSoHl2oqbdUPvfyd0VUumYni3EUTXPqB0SyURWNLf_-RQTufGPSReiWobS1SgU161R7SA_wcqGg0FbiKINC2UQlgLhwh9rec8l0o2PF8wBbzdTArhRBadCMI5lXlrUDyn2HJETKvuk-VDGqwrf3I0mI0mEXCply2l7s3yXRaBZpOXc9LnZr_ZosH-NRGMOeeRAc9Kdafm_xietdmv1BAoTDs9JlOhxUJSnDCKOlycaC_o8TKP3haB3785TH9lU2b56K5oP3PHoFO0ehCHz9ocaoqhI83GPBaXFE3FhfeWufK3xf6Y-Sk2Fj" charset="UTF-8"></script></head>
+<body>
+    <script type="text/javascript">
+    let namber = prompt("введите чмслго") 
+    let sub, division
+    for(let i=1; i<= namber; i++){
+    sub = namber
+    // console.log(i)
+    while (sub > 0) {
+        sub -= i
+        if (sub == 0) {
+            console.log("HERE")
+            if (isPrimeDivisor(i)) {
+                //console.log("HERE!")
+            // console.log(i)
+            division = i
+        }
+        }
+        //console.log(i + " является делителем числа " + namber)
+        
+    }
+}
+console.log(division)
+function isPrimeDivisor(i){
+    let sub, counter = 0
+    for(let j=1; j<=i; j++) {
+        sub = i
+        while (sub > 0) {
+            sub -= j
+            if (sub == 0) {
+                counter++
+            }
+        }
+    }
+    console.log("counter = " + counter)
+     if (counter == 2) {
+    //     console.log("Prime " + i)
+        return true
+    } 
+    else {
+        return false
+    }
+        
+}
+</script>
+</body>
+</html>
